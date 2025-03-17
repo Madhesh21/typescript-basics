@@ -1,0 +1,1 @@
+var numberOfArrays = [1,'two',3,'four',true,{name:"test"}] 
