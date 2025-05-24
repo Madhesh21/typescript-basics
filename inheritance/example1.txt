@@ -1,6 +1,4 @@
-
-
-class Person{
+/* class User {
   fname:string
   lname:string
   age:number
@@ -20,21 +18,25 @@ class Person{
   }
 }
 
-class User extends Person{
-   constructor(fname:string,lname:string,age:number){
-    super(fname,lname,age)
-   }
-}
-
-class Admin extends Person{
+class Admin{
+  fname:string
+  lname:string
+  age:number
   role:string
+
   constructor(fname:string,lname:string,age:number,role:string){
-    super(fname,lname,age)
+    this.fname = fname
+    this.lname = lname
+    this.age = age
     this.role = role
   }
 
   greet(){
-    return `Hello, ${this.fname} ${this.lname}, Role:${this.role}`
+    return `Hello, ${this.fname} ${this.lname} Role:${this.role}`
+  }
+
+  getAge(){
+    return this.age
   }
 
   manageUsers(){
@@ -51,4 +53,4 @@ console.log(user1.getAge())
 
 console.log(admin1.greet())
 console.log(admin1.getAge())
-console.log(admin1.manageUsers())
+console.log(admin1.manageUsers()) */
